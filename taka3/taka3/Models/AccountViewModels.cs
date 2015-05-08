@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace taka3.Models
@@ -79,6 +80,22 @@ namespace taka3.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "First name")]
+        public string FirstName { get; set; }  // First Name bætt við í nýskráningu
+
+        [Required]
+        [Display(Name = "Last name")]
+        public string LastName { get; set; }  // Last Name bætt við í nýskráningu
+
+        [Required]
+        [Display(Name = "BirthDate")]
+        public DateTime BirthDate { get; set; }  // BirthDate bætt við í nýskráningu
+
+        [Required]
+        [Display(Name = "Country")]
+        public string Country { get; set; }  // Country Name bætt við í nýskráningu
     }
 
     public class ResetPasswordViewModel
