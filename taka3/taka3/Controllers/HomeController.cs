@@ -26,5 +26,20 @@ namespace taka3.Controllers
 
             return View();
         }
+
+		public ActionResult Profile()
+		{
+			ViewBag.Message = "Your profile page.";
+
+			return View();
+		}
+
+		public ActionResult Hamburger()
+		{
+			ViewBag.Message = "Your settings page.";
+
+			return View();
+		}
+
     }
 }
