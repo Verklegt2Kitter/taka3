@@ -17,19 +17,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <p>Kitter</p>
             </div>
             <div class="navbar-collapse collapse">
                 @if (Request.IsAuthenticated)
                 {
                     <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Fréttaveita", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("Hópar", "About", "About")</li>
-                        <li>@Html.ActionLink("Heimasvæði", "Contact", "Profile")</li>
-                        <li>@Html.ActionLink("Hamborgari", "Contact", "Hamburger")</li>
+                        <li>@Html.ActionLink("Fréttaveita", "Contact")</li>
+                        <li>@Html.ActionLink("Hópar", "About")</li>
+                        <li>@Html.ActionLink("Heimasvæði", "ProfilePage")</li>
+                        <li>@Html.ActionLink("Hamborgari", "Hamburger")</li>
                     </ul>
+                    @Html.Partial("_LogoutPartial")
                 }
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Penisland</p>
         </footer>
     </div>
 

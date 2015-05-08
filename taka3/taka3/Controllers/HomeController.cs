@@ -27,7 +27,7 @@ namespace taka3.Controllers
             return View();
         }
 
-		public ActionResult Profile()
+		public ActionResult ProfilePage()
 		{
 			ViewBag.Message = "Your profile page.";
 
