@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using taka3.Models;
 
 namespace taka3.Controllers
 {
@@ -74,6 +75,25 @@ namespace taka3.Controllers
 
 			return View();
 		}
+
+        //fanney gerði heimasíðu hópa
+       public ActionResult GroupProfilePage()
+        {
+            ViewBag.Message = "Group homepage.";
+
+            /*var db = new ApplicationDbContext();
+
+            //1. hvaða hópur --- Fanney, úr fyrirlestri Dabs
+
+            // 2. sækja hópmeðlimi
+           var groupMembers = new List<string>();
+
+
+            var statuses = (from s in db.GroupStatuses
+                            where groupMembers.Contains(s.UserName)
+                            select s).ToList();*/
+            return View();
+        }
 
     }
 }

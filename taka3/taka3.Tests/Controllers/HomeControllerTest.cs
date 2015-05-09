@@ -26,26 +26,26 @@ namespace taka3.Tests.Controllers
         }
 
         [TestMethod]
-        public void About()
+        public void Groups()
         {
             // Arrange
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.Groups() as ViewResult;
 
             // Assert
             Assert.AreEqual("Your application description page.", result.ViewBag.Message);
         }
 
         [TestMethod]
-        public void Contact()
+        public void NewsFeed()
         {
             // Arrange
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.Contact() as ViewResult;
+            ViewResult result = controller.NewsFeed() as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);

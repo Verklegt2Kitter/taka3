@@ -4,8 +4,23 @@
     ViewBag.Title = "Groups";
 }
 
-<h2>Hópasvæði</h2>
-
 <div>
     @Html.Partial("_ToDoPartial")
+</div>
+
+
+<h2>Hóparnir mínir</h2>
+
+//hér birtast allir hóparnir sem notandinn er í
+
+<ul>
+    <li>
+        @Html.ActionLink("GroupProfilePage", "GroupProfilePage")
+    </li>
+</ul>
+
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" class="btn btn-default" value="Stofna hóp" />
+    </div>
 </div>

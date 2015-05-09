@@ -27,8 +27,10 @@ namespace taka3.Models
         }
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        //Fanney, hópastatus. Eftir fyrirlestri Dabs
+        public DbSet<GroupStatus> GroupStatuses { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
