@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 
 namespace taka3.Controllers
 {
@@ -10,7 +11,15 @@ namespace taka3.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+			//Redirectar á Fréttaveituna(NewsFeed) ef notandi er skráður inn	-Védís
+			if (Request.IsAuthenticated)
+			{
+				return View("NewsFeed");
+			}
+			else
+			{
+				return View();
+			}
         }
 
         //steindor gerði fall sem sækir myndir
@@ -38,16 +47,16 @@ namespace taka3.Controllers
             return RedirectToAction("actionname", "controller name");
         }
 
-        public ActionResult About()
+        public ActionResult Groups()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application groups page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult NewsFeed()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your newsfeed.";
 
             return View();
         }

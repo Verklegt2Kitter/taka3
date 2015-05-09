@@ -1,4 +1,6 @@
-﻿@using Microsoft.AspNet.Identity
+﻿<!--Við vildum ekki hafa Login í bannernum svo ég bjó til þetta partial view sem er bara með Logout
+    svo að það væri hægt að birta login á öðrum stað.   -Védís-->
+@using Microsoft.AspNet.Identity
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))

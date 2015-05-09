@@ -1,4 +1,6 @@
-﻿@{
+﻿<!--Bætti við ProfilePage View svo það væri hægt að setja takka í banner   -Védís-->
+
+@{
     ViewBag.Title = "Profile";
 }
 
@@ -10,3 +12,7 @@
     <input type="file" name="file" id="file" style="width: 100%;" />
     <input type="submit" value="Upload" class="submit" />
 }
+
+<div>
+    @Html.Partial("_ToDoPartial")
+</div>
