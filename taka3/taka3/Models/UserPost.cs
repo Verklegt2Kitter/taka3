@@ -12,5 +12,6 @@ namespace taka3.Models
 		public int GroupID { get; set; }
 		public string PostBody { get; set; }
 		public DateTime DateAndTime { get; set; }
+        public string image { get; set; }
 	}
 }

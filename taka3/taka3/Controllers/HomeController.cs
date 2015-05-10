@@ -30,7 +30,7 @@ namespace taka3.Controllers
             {
                 string pic = System.IO.Path.GetFileName(file.FileName);
                 string path = System.IO.Path.Combine(
-                                       Server.MapPath("~/images/profile"), pic);
+                                       Server.MapPath("~/Content/images"), pic);
                 // file is uploaded
                 file.SaveAs(path);
 
@@ -45,7 +45,7 @@ namespace taka3.Controllers
 
             }
             // after successfully uploading redirect the user
-            return RedirectToAction("actionname", "controller name");
+            return RedirectToAction("ProfilePage", "Home");
         }
 
         public ActionResult Groups()
@@ -81,7 +81,7 @@ namespace taka3.Controllers
         {
             ViewBag.Message = "Group homepage.";
 
-            /*var db = new ApplicationDbContext();
+            ApplicationDbContext db = new ApplicationDbContext();
 
             //1. hvaða hópur --- Fanney, úr fyrirlestri Dabs
 
@@ -89,9 +89,9 @@ namespace taka3.Controllers
            var groupMembers = new List<string>();
 
 
-            var statuses = (from s in db.GroupStatuses
+            var statuses = (from s in db.GroupPosts
                             where groupMembers.Contains(s.UserName)
-                            select s).ToList();*/
+                            select s).ToList();
             return View();
         }
 
