@@ -30,8 +30,16 @@
                         <li>@Html.ActionLink("Fréttaveita", "NewsFeed")</li>
                         <li>@Html.ActionLink("Hópar", "Groups")</li>
                         <li>@Html.ActionLink("Heimasvæði", "ProfilePage")</li>
-                        <li>@Html.ActionLink("Hamborgari", "Hamburger")</li>
+                        <li>@Html.ActionLink("Stillingar", "Hamburger")</li>
+                        
+                      
+                        <!---Fanney að brasa með hamborgara-->
+                        <a id="nav-toggle" href="#"><span></span></a>
+                        <div id="burger" style="display:none">
+                            <p>User Settings</p>
+                        </div>
                     </ul>
+                    
                     @Html.Partial("_LogoutPartial")
                 }
             </div>
@@ -44,6 +52,7 @@
             <p>&copy; @DateTime.Now.Year - PENISLAND</p>
         </footer>
     </div>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
