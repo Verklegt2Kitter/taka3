@@ -1908,6 +1908,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
 
 +function ($) { "use strict";
 
+
   // AFFIX CLASS DEFINITION
   // ======================
 
@@ -2012,3 +2013,8 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
   })
 
 }(window.jQuery);
+
+document.querySelector("#nav-toggle")
+.addEventListener("click", function () {
+    this.classList.toggle("active");
+});

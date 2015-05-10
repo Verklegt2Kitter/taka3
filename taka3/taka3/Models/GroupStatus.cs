@@ -5,7 +5,7 @@ using System.Web;
 
 namespace taka3.Models
 {
-    public class GroupStatus
+    public class GroupStatus //láta erfa status
     {
         // Klasi sem pósta textastöðu á hópasíðu ---- Fanney
         public int ID { get; set; }
