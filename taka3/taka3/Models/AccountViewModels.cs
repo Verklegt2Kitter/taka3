@@ -96,7 +96,15 @@ namespace taka3.Models
         [Required]
         [Display(Name = "Country")]
         public string Country { get; set; }  // Country Name bætt við í nýskráningu
+
+        [Required]
+        [Display(Name = "Gender")]
+        public string Gender { get; set; }  // Gender Name bætt við í nýskráningu
+
+
+        
     }
+
 
     public class ResetPasswordViewModel
     {

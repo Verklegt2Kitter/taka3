@@ -17,6 +17,9 @@ namespace taka3.Models
         public string Country { get; set; } //Fór eftir leiðbeiningum á netinu . Ingvi
 
         public DateTime BirthDate { get; set; }
+
+        public string Gender { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
 
