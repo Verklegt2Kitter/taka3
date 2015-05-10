@@ -12,7 +12,7 @@ namespace taka3.Controllers
     {
         public ActionResult Index()
         {
-			//Redirectar á Fréttaveituna(NewsFeed) ef notandi er skráður inn	-Védís
+			//Sendir á Fréttaveituna(NewsFeed) ef notandi er skráður inn	-Védís
 			if (Request.IsAuthenticated)
 			{
 				return View("NewsFeed");
