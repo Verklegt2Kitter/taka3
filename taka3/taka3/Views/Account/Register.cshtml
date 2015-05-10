@@ -59,10 +59,8 @@
     <div class="form-group">
         @Html.LabelFor(m => m.Gender, new { @class = "col-md-2 control-label" }) <!-- Gender radiobutton bætt við í view -->
         <div class="col-md-10">
-            @Html.RadioButtonFor(m => m.Gender, "female") Male  
+            @Html.RadioButtonFor(m => m.Gender, "male") Male  
             @Html.RadioButtonFor(m => m.Gender, "female") Female
-            <!--@Html.RadioButton("gender", "Female", false) Female-->
-
         </div>
     </div>
 
