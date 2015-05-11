@@ -1,10 +1,14 @@
-﻿<!--Bætti við ProfilePage View svo það væri hægt að setja takka í banner   -Védís-->
+﻿@model taka3.Models.ApplicationUser
 
 @{
     ViewBag.Title = "Profile";
 }
 
 <h2>Heimasvæði</h2>
+<div>
+    <!--Birta nafn innskráðs notanda-->
+    <h3>@</h3>
+</div>
 
 @using (Html.BeginForm("FileUpload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
