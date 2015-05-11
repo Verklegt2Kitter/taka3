@@ -18,8 +18,6 @@ namespace taka3.Controllers
         {
 
 			IdentityManager manager = new IdentityManager();
-
-
 			var user = new ApplicationUser
 			{
 				UserName = "username",
@@ -119,22 +117,22 @@ namespace taka3.Controllers
 			return View();
 		}
 
-        //fanney gerði heimasíðu hópa
+       //fanney gerði heimasíðu hópa
        public ActionResult GroupProfilePage()
         {
             ViewBag.Message = "Group homepage.";
 
-            ApplicationDbContext db = new ApplicationDbContext();
+          //  ApplicationDbContext db = new ApplicationDbContext();
 
             //1. hvaða hópur --- Fanney, úr fyrirlestri Dabs
 
             // 2. sækja hópmeðlimi
-           var groupMembers = new List<string>();
+            /*  var groupMembers = new List<string>();
 
 
-            var statuses = (from s in db.GroupPosts
-                            where groupMembers.Contains(s.UserName)
-                            select s).ToList();
+               var statuses = (from s in db.GroupPosts
+                               where groupMembers.Contains(s.UserName)
+                               select s).ToList();*/
             return View();
         }
 

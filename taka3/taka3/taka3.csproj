@@ -166,7 +166,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\GroupPost.cs" />
+    <Compile Include="Models\Groups.cs" />
     <Compile Include="Models\IdentityManager.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -238,6 +238,7 @@
     <Content Include="Views\Shared\_ToDoPartial.cshtml" />
     <Content Include="Views\Home\GroupProfilePage.cshtml" />
     <Content Include="Views\Shared\_AddPostPartial.cshtml" />
+    <Content Include="Views\Account\RegisterGroup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
