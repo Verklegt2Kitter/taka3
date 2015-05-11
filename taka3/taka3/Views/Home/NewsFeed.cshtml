@@ -1,10 +1,12 @@
-﻿<!--Fréttaveita-->
+﻿@model taka3.Models.ApplicationUser
 
 @{
     ViewBag.Title = "NewsFeed";
 }
 
 <h2>Fréttaveita</h2>
+<h2>@Model.FirstName @Model.LastName</h2>
+<h3>@Model.LastName</h3>
 
 <div>
     @Html.Partial("_ToDoPartial")

@@ -18,22 +18,27 @@ namespace taka3.Controllers
         {
 
 			IdentityManager manager = new IdentityManager();
+
+			//Búa til nýjan user ef það er enginn til með UserName username	-Védís
+			var passwordHash = new PasswordHasher();
+			string password = passwordHash.HashPassword("Password@123");
 			var user = new ApplicationUser
 			{
-				UserName = "username",
-				Email = "Steve@Jobs.com",
-				//PasswordHash = password,
-				FirstName = "John",
-				LastName = "Smith",
-				Country = "Kazakhstan",
-				BirthDate = DateTime.Parse("1988-02-05 17:30:00"),
-				Gender = "male"
+				UserName = "SarahPalin",
+				Email = "sarah@palin.com",
+				PasswordHash = password,
+				FirstName = "Sarah",
+				LastName = "Palin",
+				Country = "USA",
+				BirthDate = DateTime.Parse("1948-02-05 17:30:00"),
+				Gender = "female",
+				LockoutEnabled = true
 			};
 
-			var temp = manager.GetUser("username");
+			var temp = manager.GetUser("SarahPalin");
 			if(temp == null)
 			{
-				manager.CreateUser(user, "123456");
+				manager.CreateUser(user, password);
 			}
 
 
@@ -98,9 +103,9 @@ namespace taka3.Controllers
 
 			var user = manager.GetUser(userid);
 
-			var firstname = user.FirstName;	//Skilar firstname
+			//var firstname = user.FirstName;
 
-            return View();
+			return View("NewsFeed", user); //Skilar firstname þess notanda sem er innskráður	-Védís
         }
 
 		public ActionResult ProfilePage()
