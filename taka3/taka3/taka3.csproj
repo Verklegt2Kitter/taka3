@@ -167,10 +167,13 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\GroupPost.cs" />
+    <Compile Include="Models\IdentityManager.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\UserPost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\GroupService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +237,7 @@
     <Content Include="Views\Shared\_LogoutPartial.cshtml" />
     <Content Include="Views\Shared\_ToDoPartial.cshtml" />
     <Content Include="Views\Home\GroupProfilePage.cshtml" />
+    <Content Include="Views\Shared\_AddPostPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
