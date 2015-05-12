@@ -77,7 +77,9 @@ namespace taka3.Controllers
 				UserPost model = new UserPost();
 				model.UserID = User.Identity.GetUserId();
 				model.Image = path;
-				//.....
+
+                model.PostBody = " ";
+                model.DateAndTime = DateTime.Now;
 
 				userService.AddPosts(model);
 				

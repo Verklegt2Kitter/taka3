@@ -92,6 +92,9 @@ namespace taka3.Models
         [Required]
         [Display(Name = "BirthDate")]
         public DateTime BirthDate { get; set; }  // BirthDate bætt við í nýskráningu
+        public int Day { get; set; }
+        public int Month { get; set; }
+        public int Year { get; set; }
 
         [Required]
         [Display(Name = "Country")]

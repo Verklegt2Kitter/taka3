@@ -15,8 +15,9 @@ namespace taka3.Services
 			
 			if(post != null)
 			{
-				m_db.UserPosts.Add(post);
-				m_db.SaveChanges();
+                m_db.UserPosts.Add(post);
+                m_db.SaveChanges();
+				
 			}
 		}
 
