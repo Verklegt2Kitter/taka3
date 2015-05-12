@@ -1,5 +1,5 @@
 ﻿<!--Hópasvæði-->
-
+@model taka3.Models.GroupModel
 @{
     ViewBag.Title = "Groups";
 }
@@ -22,6 +22,9 @@
 <ul>
 
     <li>
-        @Html.ActionLink("Hópur 1", "GroupProfilePage")
+        @Html.ActionLink("Hópur 1", "RegisterGroup")
     </li>
 </ul>
+<div>
+    @Html.Label(Model.GroupName)
+</div>

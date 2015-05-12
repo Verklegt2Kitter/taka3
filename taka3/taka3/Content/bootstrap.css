@@ -6817,7 +6817,7 @@ td.visible-print {
 
 #nav-toggle { position: absolute; left: 50%; top: 50%; }
 
-#nav-toggle { cursor: pointer; padding: 0px 0 px 0px 0px; }
+#nav-toggle { cursor: pointer; padding: 0px 0px 0px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;

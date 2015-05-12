@@ -1997,7 +1997,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
 
   // AFFIX DATA-API
   // ==============
-
+   
   $(window).on('load', function () {
     $('[data-spy="affix"]').each(function () {
       var $spy = $(this)

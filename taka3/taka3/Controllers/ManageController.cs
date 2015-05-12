@@ -49,11 +49,13 @@ namespace taka3.Controllers
                 _userManager = value;
             }
         }
-
+                   
         //
+
+
         // GET: /Manage/Index
-        public async Task<ActionResult> Index(ManageMessageId? message)
-        {
+         public async Task<ActionResult> Index(ManageMessageId? message)
+            {
             ViewBag.StatusMessage =
                 message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
                 : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
